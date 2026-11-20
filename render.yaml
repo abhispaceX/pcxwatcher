@@ -1,10 +1,10 @@
 services:
   - type: web
     name: pcx-watcher
-    env: python
     plan: free
-    buildCommand: bash build.sh
-    startCommand: bash start.sh
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
     envVars:
       - key: PLAYWRIGHT_BROWSERS_PATH
         value: /opt/render/.cache/ms-playwright

@@ -1,0 +1,13 @@
+.git
+.gitignore
+*.pyc
+__pycache__
+venv
+.env
+.DS_Store
+watcher_chrome_profile
+*.log
+build/
+dist/
+.pytest_cache
+README.md
